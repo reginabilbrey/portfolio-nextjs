@@ -1,0 +1,358 @@
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between nav and logo */
+    align-items: flex-start; /* Aligns items to the top */
+    padding: 20px; /* Adds padding around the header */
+    position: sticky; /* Makes the header stick to the top */
+    top: 0;                 /* REQUIRED */
+    z-index: 1000;          /* prevents overlap issues */
+    background-color: #afbdd0;
+}
+
+.a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-menu ul {
+  list-style: none; /* Removes default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin-bottom: 10px; /* Adds space between list items */
+} 
+
+.nav-menu a {
+    color: black;
+    text-decoration: none;
+}
+    
+.logo h1 {
+    margin: 0;
+    font-size: 70px;
+}
+
+/* Carousel Styles */
+
+.carousel-container {
+  width: 100%;          /* adjust as needed */
+  overflow: hidden;
+  }
+
+.carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: visible;
+  transition: transform 0.5s ease-in-out;
+  justify-content: center;
+}
+
+.carousel-item {
+  height: 400px; /* Fixed height for all cards */
+  display: flex;
+  justify-content: center;
+    object-fit: cover;
+  flex: 0 0 33.333%; /* 3 cards at a time */
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 12px; 
+}
+
+.active-center {
+    transform: scale(1.1); /* Make it larger */ 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); /* Add a significant shadow to give it elevation (popping effect) */
+    z-index: 10; /* Bring it to the front of the stacking order */ 
+    background-color: black;/* Optional: Change background or border color for emphasis */
+    border-color: #007bff;
+}
+
+.carousel-controls { /* Controls container under images */
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-btn {
+  background: #836378;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+/* Project Section Styles */
+
+.projects {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #836378;
+}
+
+.projects h2 {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+/* Each row of images */
+.row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Staggering alignment */
+/* Odd rows = right aligned */
+.row:nth-of-type(odd) {
+  justify-content: flex-end;
+}
+
+/* Even rows = left aligned */
+.row:nth-of-type(even) {
+  justify-content: flex-start;
+}
+
+.project-box {
+  width: 300px;       /* or any max width you want */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;       /* keeps natural proportions */
+  display: block;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+  object-fit: cover;
+}
+
+.see-all {
+  display: none;      /* Hide "See All Projects" on desktop */
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Profile Section*/
+
+.profile {
+  width: 100%;
+  padding: 60px 20px;
+}
+
+.profile h2 {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.headshot {
+  width: 260px;          /* matches your project-box width */
+  height: 320px;         /* portrait ratio */
+  border-radius: 12px;   /* soft rounded corners */
+  overflow: hidden;      /* ensures clean edges */
+  background-color: #d9d9d9; /* subtle placeholder REMOVE once image file is added */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* fills the box without distortion */
+  display: block;
+}
+
+
+/*Process Section */
+
+.process {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #836378;
+}
+
+.process h2 {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.concept {
+  width: 260px;          /* matches your project-box width */
+  height: 320px;         /* portrait ratio */
+  border-radius: 12px;   /* soft rounded corners */
+  overflow: hidden;      /* ensures clean edges */
+  background-color: #d9d9d9; /* subtle placeholder REMOVE once image file is added */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.concept img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* fills the box without distortion */
+  display: block;
+}
+
+
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 60px 20px;
+}
+.footer h2 {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: black;
+}
+.site-footer h2 {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.footer-section {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Shared row styling */
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* ---------------------- */
+/* ROW 1: Headshot only   */
+/* ---------------------- */
+
+.row-1 {
+  justify-content: flex-end;
+}
+
+.footer-headshot-box {
+  width: 260px;
+  height: 320px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #d9d9d9;
+}
+
+.footer-headshot-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------- */
+/* ROW 2 & 3: Left/Right  */
+/* ---------------------- */
+
+.footer-row h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  min-width: 180px; /* keeps headings aligned */
+}
+
+/* Right-side form column */
+.footer-form-column {
+  max-width: 400px;
+  width: 100%;
+}
+
+.footer-form-column form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-form-column label {
+  font-size: 0.9rem;
+}
+
+.footer-form-column input {
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  padding: 4px 0;
+  font-size: 1rem;
+}
+
+.footer-form-column button {
+  margin-top: 20px;
+  align-self: center;
+  padding: 10px 24px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Right-side contact column */
+.footer-contact-column {
+  max-width: 400px;
+  width: 100%;
+}
+
+.footer-contact-column p {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.mobile-contact-link {
+  color: black;
+}
+
+.socialIcons {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcons .icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+}

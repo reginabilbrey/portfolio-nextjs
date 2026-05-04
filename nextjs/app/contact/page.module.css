@@ -1,0 +1,49 @@
+.footer {
+  width: 100%;
+  padding: 60px 20px;
+}
+.footer h2 {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: black;
+}
+.site-footer h2 {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.footer-section {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* Shared row styling */
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.socialIcons {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcons .icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: black;
+}

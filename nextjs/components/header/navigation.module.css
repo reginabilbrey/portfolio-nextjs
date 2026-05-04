@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between nav and logo */
+    align-items: flex-start; /* Aligns items to the top */
+    padding: 20px; /* Adds padding around the header */
+    position: sticky; /* Makes the header stick to the top */
+    top: 0;                 /* REQUIRED */
+    z-index: 1000;          /* prevents overlap issues */
+    background-color: #afbdd0;
+}
+
+.a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-menu ul {
+  list-style: none; /* Removes default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin-bottom: 10px; /* Adds space between list items */
+} 
+
+.nav-menu a {
+    color: black;
+    text-decoration: none;
+}
+    
+.logo h1 {
+    margin: 0;
+    font-size: 70px;
+}
