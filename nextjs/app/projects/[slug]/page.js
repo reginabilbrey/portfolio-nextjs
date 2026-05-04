@@ -1,5 +1,6 @@
 import projects from "@/app/data/projects";
 
+
 export default function ProjectPage({ params }) {
   const project = projects.find((project) => project.slug === params.slug)
 
