@@ -1,4 +1,15 @@
- 
+import FavoriteType from "@/assets/images/rockwell.png"
+import RockwellMoodboard from "@/assets/images/rockwell_moodboard.png"
+import Mascot from "@/assets/images/otter_mascot.png"
+import RapidDesignSketch from "@/assets/images/rapid_design_sketch.png"
+import RapidDesignV1 from "@/assets/images/rapid_design_v1.png"
+import RapidDesignV2 from "@/assets/images/rapid_design_v2.png"
+import RapidDesignV3 from "@/assets/images/rapid_design_v3.png"
+import Placeholder from "@/assets/images/placeholder.jpg";
+
+
+
+
 const projects = [ 
     {   
         id: "1",
@@ -8,7 +19,7 @@ const projects = [
         category: "Typography",
         createdAt: "2026-03-13T23:59:00Z",
         image: {
-            url:"/images/favorite_type_rockwell.png",
+            src: FavoriteType,
             alt: "Poster of the Rockwell typeface including history and characteristics",
             title: "Rockwell Typeface Poster"
         },
@@ -18,10 +29,10 @@ const projects = [
                 title: "Sketching",
                 description: "initial sketch of possible layouts with elements to include",
                 image: {
-                    url: "",
-                    alt: "sketch of poster ideas",
-                    title: "Rockwell Sketch",
-                },
+                    src: Placeholder,
+                    alt: "Sketch placeholder",
+                    title: "Sketch Placeholder"
+                    },
                 type: "sketch"
             },
     
@@ -29,8 +40,8 @@ const projects = [
                 title: "Inspiration",
                 description: "Images found on internet",
                 image: {
-                    url: "/images/rockwell_moodboard.png",
-                    alt: "typeface moodboard",
+                    src: RockwellMoodboard,
+                    alt: "collection of images for inspiration",
                     title: "Rockwell Moodboard"
                 },
                 type: "moodboard"
@@ -48,7 +59,7 @@ const projects = [
         category: "Mascot",
         createdAt: "2025-09-03T22:00:00Z",
         image: {
-            url: "/images/otter_mascot.png",
+            src: Mascot,
             alt: "otter mascot in navy, gold, maroon color theme",
             title: "Animal Mascot" 
         },
@@ -58,7 +69,7 @@ const projects = [
                 title: "Inspiration",
                 description: "Images found on internet",
                 image: {
-                    url: "",
+                    src: Placeholder,
                     alt: "collection of images of otters, river rocks, wetlands, fish scales and colors",
                     title: "Mascot Moodboard"
                 },
@@ -76,7 +87,7 @@ const projects = [
         category: "Logos",
         createdAt: "2026-03-12T10:52:00Z",
         image: {
-            url: "/images/rapid_design_v3.png",
+            src: Placeholder,
             alt: "three logos with yellow, red and purple abstract birds and text",
             title: "Rapid Design Logos"
         },
@@ -86,7 +97,7 @@ const projects = [
                 title: "Thumbnail Sketch",
                 description: "Sketch done by pencil in a .75 inch x .75 inch box",
                 image: {
-                    url: "/images/thumbnail_bird_sketch.png",
+                    src: RapidDesignSketch,
                     alt: "simple sketch of abstract bird",
                     title: "Thumbnail Bird Sketch"
                 },
@@ -97,7 +108,7 @@ const projects = [
                 title: "Version 1",
                 description: "first version of logo created in Adobe Illustrator",
                 image: {
-                    url: "/images/rapid_design_v1.png",
+                    src: RapidDesignV1,
                     alt: "version one of logo with yellow bird and text",
                     title: "Rapid Design V1"
                 },
@@ -107,7 +118,7 @@ const projects = [
                 title: "Version 2",
                 description: "Second version of logo created in Adobe Illustrator",
                 image: {
-                    url: "/images/rapid_design_v2.png",
+                    src: RapidDesignV2,
                     alt: "version two of logo with red bird and text",
                     title: "Rapid Design V2"
                 },
@@ -117,7 +128,7 @@ const projects = [
                 title: "Version 3",
                 description: "Third version of logo created in Adobe Illustrator",
                 image: {
-                    url: "/images/rapid_design_v3.png",
+                    src: RapidDesignV3,
                     alt: "version three of logo with purple bird and text",
                     title: "Rapid Design V3"
                 },

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import projects from "@/app/data/projects"
 
+
 import Navigation from "@/components/header/navigation";
 
 
@@ -18,6 +19,8 @@ export default function ProjectsPage() {
         <article key={project.slug}>
           <h2>{project.title}</h2>
           <p>{project.description}</p>
+          <Image src={project.image.src} alt={project.image.alt}   width={600} height={400} />
+          
           <Link href={`/projects/${project.slug}`}>
             View Project
           </Link>
