@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "@/nextjs/node_modules/next/image";
+import Link from "@/nextjs/node_modules/next/link";
 import projects from "@/app/data/projects"
 
 

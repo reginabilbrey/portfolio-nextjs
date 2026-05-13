@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/nextjs/node_modules/next/image";
 import styles from "./page.module.css";
 import linkedin from "@/assets/images/linkedin.svg";
 import instagram from "@/assets/images/instagram.svg";

@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from "@/nextjs/node_modules/next/image";
+import Link from "@/nextjs/node_modules/next/link";
 import styles from "./page.module.css";
 
 import IndependentStudy from "@/assets/images/GDES131_FA25_6.1IndependentStudy_Poster_RBilbrey.png";
@@ -10,7 +10,7 @@ import linkedin from "@/assets/images/linkedin.svg";
 import instagram from "@/assets/images/instagram.svg";
 import facebook from "@/assets/images/facebook.svg";
 
-import Navigation from "./components/header/navigation";
+import Navigation from "../components/header/navigation";
 
 export default function Home() {
   return (
